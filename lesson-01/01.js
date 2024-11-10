@@ -10,5 +10,4 @@ while (i <= 20) {
     i++
 }
 
-
-const executeScript = new Function(`${this.studentCode} \n return sum`);
+console.log(sum)
