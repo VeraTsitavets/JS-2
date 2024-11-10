@@ -11,3 +11,5 @@ let i = 10
 while (i) {
   factorial *= (i--)
 }
+
+const executeScript = new Function(`${this.studentCode} \n return factorial;`);
