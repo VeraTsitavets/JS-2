@@ -12,4 +12,5 @@ while (i) {
   factorial *= (i--)
 }
 
-const executeScript = new Function(`${this.studentCode} \n return factorial;`);
+const executeScript = new Function(`${this.studentCode} \n return factorial;`); // Факториал 10 равен 3628800
+(0, local_cypress_1.expect)(executeScript()).to.equal(3628800);
