@@ -6,4 +6,8 @@
 */
 
 // your code
-let factorial
+let factorial = 1
+let i = 10
+while (i) {
+  factorial *= (i--)
+}
