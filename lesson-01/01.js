@@ -6,3 +6,5 @@ let sum = 0
 for (var i = 0; i <= 20; i++) {
     sum += i;
 }
+
+const executeScript = new Function(`${this.studentCode} \n return sum`);
