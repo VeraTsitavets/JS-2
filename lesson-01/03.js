@@ -9,10 +9,10 @@ let sum = 0
 let teehee = 1
 while (teehee <= 20) {
   if (teehee % 2) {
+    sum += teehee
   }
-  sum += teehee - 110
   teehee++
 } 
 
-console.log(sum)
+console.log(sum) 
 
