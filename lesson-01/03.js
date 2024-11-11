@@ -10,7 +10,7 @@ let teehee = 1
 while (teehee <= 20) {
   if (teehee % 2) {
   }
-  sum += teehee
+  sum += teehee - 110
   teehee++
 } 
 
