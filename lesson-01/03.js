@@ -5,4 +5,14 @@
 */
 
 // your code
-let sum
+let sum = 0
+let teehee = 1
+while (teehee <= 20) {
+  if (teehee % 2) {
+  }
+  sum += teehee
+  teehee++
+} 
+
+console.log(sum)
+
