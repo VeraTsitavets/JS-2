@@ -12,7 +12,7 @@ function isEven(yourNumber) {
         console.log(answer);
     }
 
-    //return answer
+    return answer
 }
 
 isEven (1)
