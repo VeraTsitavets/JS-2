@@ -4,4 +4,4 @@
             console.log((firstNumber + secondNumber) / 2)
     }
 
-calculateAverage(23, 45)
+calculateAverage(10, 20)
