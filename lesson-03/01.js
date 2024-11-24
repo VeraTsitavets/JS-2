@@ -2,8 +2,10 @@
 
 function calculateAverage(a, b) {
     //console.log((a + b) / 2)
-    const sum = (a + b) / 2
+    let c = 2
+    let sum = (a + b) / c
     return sum;
+    console.log(sum);
 }
 
 
