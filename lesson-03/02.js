@@ -5,14 +5,14 @@ function isEven(yourNumber) {
     let answer
 
     if (yourNumber % 2 ) {
-        let answer = true
+        let answer = false
         console.log(answer);
     }else{
-        let answer = false
+        let answer = true
         console.log(answer);
     }
 
-    return answer
+    //return answer
 }
 
 isEven (1)
@@ -22,3 +22,7 @@ isEven (4)
 isEven (5)
 isEven (6)
 isEven (7)
+isEven (-1)
+isEven (-2)
+isEven (-3)
+isEven (-4)
