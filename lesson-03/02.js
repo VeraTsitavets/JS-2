@@ -5,14 +5,13 @@ function isEven(num) {
     let answer = false
 
     if (num % 2 ) {
-        let answer = true
-        console.log(answer);
+        console.log(false);
     }else{
-        
-        console.log(answer);
+        //let answer = true
+        console.log(true);
     }
 
-    return answer
+    return true || false
 }
 
 isEven (2)
