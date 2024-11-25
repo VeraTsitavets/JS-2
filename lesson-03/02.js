@@ -2,14 +2,13 @@
 // Функция должна возвращать true, если число чётное, и false — в противном случае
 
 function isEven(num) {
-    let answer
+    let answer = false
 
     if (num % 2 ) {
-        let answer = !!false
-        console.log(answer);
+        console.log(answer + ' false');
     }else{
-        let answer = !!true
-        console.log(answer);
+        let answer = true
+        console.log(answer + ' true');
     }
 
     return answer
