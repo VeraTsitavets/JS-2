@@ -5,10 +5,10 @@ function isEven(num) {
     let answer
 
     if (num % 2 ) {
-        let answer = false
+        let answer = !!false
         console.log(answer);
     }else{
-        let answer = true
+        let answer = !!true
         console.log(answer);
     }
 

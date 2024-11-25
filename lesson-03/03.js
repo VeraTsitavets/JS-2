@@ -18,6 +18,6 @@ function findLargest(num_1, num_2, num_3) {
 } 
 
 findLargest(1, 2, 3)
-findLargest(2, 5, 2)
+findLargest(3, 2, 1)
 findLargest(1, 2, 5)
 findLargest(5, 2, 5)
