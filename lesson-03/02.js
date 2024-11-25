@@ -1,10 +1,10 @@
 // Разработайте функцию isEven, которая определяет, чётное ли число.
 // Функция должна возвращать true, если число чётное, и false — в противном случае
 
-function isEven(yourNumber) {
+function isEven(num) {
     let answer
 
-    if (yourNumber % 2 ) {
+    if (num % 2 ) {
         let answer = false
         console.log(answer);
     }else{
