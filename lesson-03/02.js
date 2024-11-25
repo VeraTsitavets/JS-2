@@ -5,23 +5,18 @@ function isEven(num) {
     let answer = false
 
     if (num % 2 ) {
-        console.log(answer + ' false');
-    }else{
         let answer = true
-        console.log(answer + ' true');
+        console.log(answer);
+    }else{
+        
+        console.log(answer);
     }
 
     return answer
 }
 
-isEven (1)
 isEven (2)
 isEven (3)
-isEven (4)
-isEven (5)
-isEven (6)
-isEven (7)
+isEven (0)
 isEven (-1)
 isEven (-2)
-isEven (-3)
-isEven (-4)
