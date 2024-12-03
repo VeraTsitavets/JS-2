@@ -13,45 +13,6 @@
 includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 */
 
-/*function includesElement(array, element) {
-
-    for (let index = 0; index < array.length; index++) {
-
-        let killinMysekf = array[index]
-
-            if (killinMysekf === element) {
-                answer = true
-                //console.log( answer);
-                return answer
-            } else {
-                answer = false
-                //console.log( answer);
-                return answer
-            }
-
-        //console.log(answer)
-        //return answer
-        }
-}
-
-
-    includesElement([1, 2, 3], 4) */
-
-    /* const meow = [1, 2, 3] //['true', 'false']
-    for (let index = 0; index < meow.length; index++) {
-        const meowMeow = meow[index];
-        
-        if (meow[index] == 'false') {
-            answer = true
-        }else{
-            answer = false
-        }
-        console.log(answer);
-        return(answer)
-        
-    } */
-
-
 function includesElement(array, element) {
     for (let index = 0; index < array.length; index++) {
 
@@ -67,5 +28,7 @@ function includesElement(array, element) {
     console.log(answer)
 }
     
-    includesElement([1, 2, 3], 1)
+    includesElement([1, 2, 3], 2)
     includesElement([true, false], false)
+    includesElement(['apple', 'banana', 'orange'], 'banana')
+    includesElement(['apple', 'banana', 'orange'], 'melon')
