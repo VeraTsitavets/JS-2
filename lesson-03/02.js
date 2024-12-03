@@ -2,12 +2,12 @@
 // Функция должна возвращать true, если число чётное, и false — в противном случае
 
 function isEven(num) {
-    let expected = false
+    let expected = !!0
 
     if (num % 2 ) {
         console.log(expected);
     }else{
-        expected = true
+        expected = !!1
         console.log(expected);
     }
 
