@@ -26,6 +26,7 @@ function includesElement(array, element) {
         } 
     }
     console.log(answer)
+    return(answer)
 }
     
     includesElement([1, 2, 3], 2)
