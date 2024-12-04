@@ -13,20 +13,28 @@
 */
 
 function doubleEachCharacter(str) {
-const newBigStr = []
 
+
+    let newString = ''
+    
     for (let index = 0; index < str.length; index++) {
+    newString = newString + str[index] + str[index]
+    }
+    console.log(newString);        
+    return newString
+}
+
+doubleEachCharacter('hello')
+
+
+    /* for (let index = 0; index < str.length; index++) {
         const element = str[index];
         if (element === element) {
+            //newBigStr.push(element)
             newBigStr.push(element)
             newBigStr.push(element)
-
             
         }
     }
     console.log(newBigStr);
-    return newBigStr
-}
-
-
-doubleEachCharacter('hello')
+    return newBigStr */
