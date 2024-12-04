@@ -26,17 +26,19 @@ function findCommonElements(array1, array2) {
             const sameNum2 = array2[index2];
             if (sameNum1 === sameNum2) {
                 newShit.push(sameNum1)   
-            } else {
-                return []
+            //} else {
+                //return []
             }
         }    
     }
     console.log(newShit);
-    return newShit  || []  
-
+    return newShit
 }
 
 
 
 
-findCommonElements([1, 2, 3], [7, 0, 8, 7])
+findCommonElements([1, 2, 3], [2, 3, 4, 5, 6]) //2, 3
+findCommonElements([1, 2, 3, 4], [2, 3, 5, 6]) //2, 3
+findCommonElements(['apple', 'banana', 'cherry'], ['banana']) //'banana'
+findCommonElements(['apple', 'banana'], ['orange', 'melon']) //[]
