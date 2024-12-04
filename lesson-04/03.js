@@ -27,7 +27,7 @@ function findCommonElements(array1, array2) {
             if (sameNum1 === sameNum2) {
                 newShit.push(sameNum1)   
             } else {
-                //return []
+                return []
             }
         }    
     }
@@ -39,4 +39,4 @@ function findCommonElements(array1, array2) {
 
 
 
-findCommonElements([1, 2, 3], [7, 1, 4, 2])
+findCommonElements([1, 2, 3], [7, 0, 8, 7])
