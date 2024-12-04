@@ -28,9 +28,6 @@ function findCommonElements(array1, array2) {
                 newShit.push(sameNum1)  
                 console.log(newShit);
                 return newShit              
-            }else{
-                //console.log(newShit);
-                return newShit
             }
         }
     }
