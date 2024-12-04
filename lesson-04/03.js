@@ -18,27 +18,24 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 */
 
 function findCommonElements(array1, array2) {
-    let newShit = []
+    let veryImportant = []
 
     for (let index1 = 0; index1 < array1.length; index1++) {
         const sameNum1 = array1[index1];
         for (let index2 = 0; index2 < array2.length; index2++) {
             const sameNum2 = array2[index2];
             if (sameNum1 === sameNum2) {
-                newShit.push(sameNum1)   
+                veryImportant.push(sameNum1)   
             } else {
-                let newShit = []
+                let veryImportant = []
             }
         }    
     }
-    console.log(newShit);
-    return newShit
+    return veryImportant
 }
-
-
-
 
 findCommonElements([1, 2, 3], [2, 3, 4, 5, 6]) //2, 3
 findCommonElements([1, 2, 3, 4], [2, 3, 5, 6]) //2, 3
+findCommonElements([1, 2, 3, 11], [2, 3, 5, 6, 4, 7, 8, 9, 0, 10, 11, 12, 13, 15, 16, 17, 18]) //2, 3, 11
 findCommonElements(['apple', 'banana', 'cherry'], ['banana']) //'banana'
 findCommonElements(['apple', 'banana'], ['orange', 'melon']) //[]
