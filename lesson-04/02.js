@@ -18,26 +18,25 @@
 function findUniqueElements(array) {
 
     const newArray = []
-    let doubleNumbers = 0
-
+    let newNewArray = []
+    let doubleNumbers = {}
     for (let index = 0; index < array.length; index++) {
-        let okayWrong = array[index]
-    
-        if (doubleNumbers === array.indexOf[index]) {
-            doubleNumbers++
-            console.log(doubleNumbers);
-        } else {
-            array.splice(index, 1)
-            console.log(array);
+        const element = array[index];
+        doubleNumbers[element] = doubleNumbers[element] >= 1 ? doubleNumbers[element] + 1 : 1
+        if (doubleNumbers[element] === 2) {
+        newArray.push(element)
+        //if (newArray.length > 0) {}
 
-            newArray.push(array)
-            console.log(newArray);
-            break
-        } 
+        }else{
+        newNewArray.push(element)
+        }
     }
     //console.log(newArray)
-    //return(newArray)
+    console.log(newNewArray)
+    return newNewArray
+    //console.log(newArray)
 }
+
 
 
 findUniqueElements([1, 2, 3, 2, 1, 4])  
