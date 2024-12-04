@@ -27,16 +27,16 @@ function findCommonElements(array1, array2) {
             if (sameNum1 === sameNum2) {
                 newShit.push(sameNum1)   
             } else {
-                //console.log(newShit);
+                //return []
             }
         }    
     }
     console.log(newShit);
-    return newShit     
+    return newShit  || []  
 
 }
 
 
 
 
-findCommonElements([1, 2, 3], [7, 6, 4])
+findCommonElements([1, 2, 3], [7, 1, 4, 2])
