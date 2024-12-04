@@ -29,13 +29,16 @@ function findCommonElements(array1, array2) {
             } else {
                 let veryImportant = []
             }
-        }    
+        }   
     }
+
+    console.log(veryImportant);
     return veryImportant
+    
 }
 
 findCommonElements([1, 2, 3], [2, 3, 4, 5, 6]) //2, 3
-findCommonElements([1, 2, 3, 4], [2, 3, 5, 6]) //2, 3
-findCommonElements([1, 2, 3, 11], [2, 3, 5, 6, 4, 7, 8, 9, 0, 10, 11, 12, 13, 15, 16, 17, 18]) //2, 3, 11
+findCommonElements([5, 2, 3, 6], [2, 3, 5, 6]) //5, 2, 3, 6
+findCommonElements([1, 2, 3, 11, 17, 0], [2, 3, 5, 6, 4, 7, 8, 9, 0, 10, 11, 12, 13, 15, 16, 17, 18]) //2, 3, 11, 17, 0
 findCommonElements(['apple', 'banana', 'cherry'], ['banana']) //'banana'
 findCommonElements(['apple', 'banana'], ['orange', 'melon']) //[]

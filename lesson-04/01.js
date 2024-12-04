@@ -19,18 +19,17 @@ function includesElement(array, element) {
         if (array[index] === element) {
 
             answer = true
-            console.log(answer)
-            //break
+            break
         } else {
 
             answer = false
         } 
     }
-    //console.log(answer)
-    //return(answer)
+    console.log(answer)
+    return(answer)
 }
     
     includesElement([1, 2, 3], 2)
-    //includesElement([true, false], false)
-    //includesElement(['apple', 'banana', 'orange'], 'banana')
-    //includesElement(['apple', 'banana', 'orange'], 'melon')
+    includesElement([true, false], false)
+    includesElement(['apple', 'banana', 'orange'], 'banana')
+    includesElement(['apple', 'banana', 'orange'], 'melon')
