@@ -18,7 +18,7 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 */
 
 function findCommonElements(array1, array2) {
-    const newShit = []
+    let newShit = []
 
     for (let index1 = 0; index1 < array1.length; index1++) {
         const sameNum1 = array1[index1];
@@ -26,8 +26,8 @@ function findCommonElements(array1, array2) {
             const sameNum2 = array2[index2];
             if (sameNum1 === sameNum2) {
                 newShit.push(sameNum1)   
-            //} else {
-                //return []
+            } else {
+                let newShit = []
             }
         }    
     }
