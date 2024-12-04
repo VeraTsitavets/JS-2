@@ -34,7 +34,6 @@ function findCommonElements(array1, array2) {
 
     console.log(veryImportant);
     return veryImportant
-    
 }
 
 findCommonElements([1, 2, 3], [2, 3, 4, 5, 6]) //2, 3
