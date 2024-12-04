@@ -25,6 +25,7 @@ const newBigStr = []
         }
     }
     console.log(newBigStr);
+    return newBigStr
 }
 
 
