@@ -26,8 +26,6 @@ function findCommonElements(array1, array2) {
             const sameNum2 = array2[index2];
             if (sameNum1 === sameNum2) {
                 veryImportant.push(sameNum1)   
-            } else {
-                let veryImportant = []
             }
         }   
     }
