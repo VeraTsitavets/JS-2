@@ -18,7 +18,7 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 */
 
 function findCommonElements(array1, array2) {
-    let veryImportant = []
+    const veryImportant = []
 
     for (let index1 = 0; index1 < array1.length; index1++) {
         const sameNum1 = array1[index1];
