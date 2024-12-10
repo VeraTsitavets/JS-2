@@ -35,4 +35,20 @@ const gallery = {
   'The Scream': 'Edvard Munch',
 }
 
-function updateGallery() {}
+function updateGallery(place, theObjJname, newInformation) {
+  if ('Mona Lisa' === theObjJname){
+    place["Mona Lisa"] = newInformation
+  } else if ('Starry Night' === theObjJname){
+    place['Starry Night'] = newInformation
+  } else if ('The Scream' === theObjJname){
+    place['The Scream'] = newInformation
+  } else {
+    place[theObjJname] = newInformation
+  }
+
+}
+
+updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506')
+updateGallery(gallery, 'The Persistence of Memory', 'Salvador Dali')
+
+console.log(gallery)
