@@ -25,7 +25,7 @@ let i = 0
 
 
   buttonPrev.addEventListener('click', function() {
-    i > 0 && i <= WEB_TECH_IMAGES.length - 1 ? i-- : i = 0;
+    i > 0 && i <= WEB_TECH_IMAGES.length - 1 ? i-- : i = WEB_TECH_IMAGES.length - 1 ;
     imagesHTML.src = WEB_TECH_IMAGES[i]
   })
 
