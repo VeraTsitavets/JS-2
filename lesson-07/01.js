@@ -18,5 +18,4 @@ function capitalizeWords(yes) {
       return string
 }
 
-const phrase = "hello world from javascript"
 capitalizeWords("hello world from javascript")
