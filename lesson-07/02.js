@@ -27,6 +27,21 @@ function isNumeric(str) {
 }
 
 
+/* function isNumericOr(str1) { // мой рефактор :3
+  let meow = true
+  let substractO = str1 - 0
+  let shiter = isNaN(str1)
+  typeof substractO === 'number' && str1 !== ' ' && str1 !== " " && shiter != true ? meow = true : meow = false
+  console.log(meow);
+  return meow
+} 
+
+isNumericOr("123")
+isNumericOr("12.3")
+isNumericOr("123abc")
+isNumericOr("abc")
+isNumericOr(" ") */
+
 isNumeric("123")
 isNumeric("12.3")
 isNumeric("123abc")
