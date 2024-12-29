@@ -43,10 +43,8 @@ startButton.addEventListener('click', () => {
   } else if(counter < 1){
     let counter = "🚀"
     countdownDisplay.textContent = counter
-  } else {
-    countdownDisplay.textContent = counter
-    
   }
+    
 }, 1000)
 
 })
