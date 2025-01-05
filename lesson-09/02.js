@@ -36,7 +36,7 @@ const theMapCallback = (element, index) => {
   if (typeof element === 'number') {
     return element * 2
   } else {
-    return element[index] + [index]
+    return element[0] + [index]
   }
   return index
 }
