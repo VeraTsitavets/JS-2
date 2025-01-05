@@ -40,7 +40,7 @@ const filterCallback = (element, index) => {
   if (typeof element === 'number') {
     return element % 2 !== 0
   } else {
-    return element[3] !== undefined && element[0] !== 0
+    return element[3] !== undefined
   }
   return index;
 }
