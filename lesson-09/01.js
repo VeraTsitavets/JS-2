@@ -26,6 +26,47 @@ console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 const numbers = [1, 2, 3, 4, 5]
 
 
+const filter = (array, callback) => {
+  let final = []
+  for (let i = 0; i < array.length; i++) {
+    if( callback(array[i])) {
+      final.push(array[i])
+    }
+    
+  }
+  return final
+}
+
+const filterCallback = (element, index) => {
+  if (typeof element === 'number') {
+    return element % 2 !== 0
+  } else {
+    return element[3] !== undefined && element[0] !== 0
+  }
+}
+
+/*
+const filter = () => {
+
+  const newArray = numbers.filter((el) => {
+    return el % 2 !== 0 
+  }) 
+}
+
+const callback = (array, thatCallback) => {
+  
+  for (let i = 0; i < array.length; i++) {
+    const el = array[i];
+
+    thatCallback(el)
+  }
+}
+
+callback(numbers, filter)
+*/
+/* 
+const numbers = [1, 2, 3, 4, 5]
+
 const filter = (newArray) => {
   const newNewArray = []
   newNewArray.push[newArray]
@@ -44,5 +85,5 @@ const callback = (array, thatCallback) => {
   }
 }
 
-callback(numbers, filter)
+callback(numbers, filter)*/
 
