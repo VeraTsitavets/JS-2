@@ -27,13 +27,17 @@ console.log(doubledNumbers) // Должен вывести: [2, 4, 6, 8, 10]
 const map = (array, callback) => {
   const newArr = []
   for (let index = 0; index < array.length; index++) {
-      newArr.push(callback(array[index]))
+      newArr.push(callback(array[index], index))
   }
   return newArr
 }
 
 const theMapCallback = (element, index) => {
-  return element * 2
+  if (typeof element === 'number') {
+    return element * 2
+  } else {
+    return element[index] + [index]
+  }
   return index
 }
 
