@@ -35,7 +35,7 @@ const model = {
   deleteMovie(movieId) {
     this.movies = this.movies.filter(newMovie=> newMovie.id !== movieId)
     const messageBox = document.querySelector('.message-box') //Фильм успешно удалён!
-    messageBox.textContent = 'Фильм успешно удалён'
+    messageBox.textContent = 'Фильм успешно удалён!'
     view.renderMovies(this.movies)
   },
 }
