@@ -25,11 +25,19 @@ const model = {
   movies: [],
   addMovie(title, description) {
     const id = Math.random()
+    
     const newMovie = { id, title, description }
     this.movies.push(newMovie)
     view.renderMovies(this.movies)
   },
   // your code
+
+  deleteMovie(movieId) {
+    this.movies = this.movies.filter(newMovie=> newMovie.id !== movieId)
+    const messageBox = document.querySelector('.message-box') //Фильм успешно удалён!
+    messageBox.textContent = 'Фильм успешно удалён'
+    view.renderMovies(this.movies)
+  },
 }
 
 const view = {
@@ -39,6 +47,7 @@ const view = {
     const form = document.querySelector('.form')
     const inputTitle = document.querySelector('.input-title')
     const inputDescription = document.querySelector('.input-description')
+    
 
     form.addEventListener('submit', function (event) {
       event.preventDefault()
@@ -51,12 +60,20 @@ const view = {
     })
 
     // your code
+    const ul = document.querySelector('.list')
+
+    ul.addEventListener('click', function(event){
+      if(event.target.classList.contains('delete-button')){
+        const movieId = +event.target.parentElement.id
+        controller.deleteMovie(movieId)
+      }
+    })
   },
   renderMovies(movies) {
     const list = document.querySelector('.list')
     let moviesHTML = ''
 
-    for (const movie of movies) {
+    for (const movie of movies) { /////////////////////////////////////////////////////////////////////
       moviesHTML += `
         <li id="${movie.id}" class="movie">
           <b class="movie-title">${movie.title}</b>
@@ -69,7 +86,7 @@ const view = {
     list.innerHTML = moviesHTML
   },
   displayMessage(message, isError = false) {
-    const messageBox = document.querySelector('.message-box')
+    const messageBox = document.querySelector('.message-box') //Фильм успешно удалён!
     messageBox.textContent = message
     if (isError) {
       messageBox.classList.remove('success')
@@ -79,6 +96,7 @@ const view = {
       messageBox.classList.add('success')
     }
   },
+  
 }
 
 const controller = {
@@ -90,7 +108,13 @@ const controller = {
       view.displayMessage('Заполните все поля!', true)
     }
   },
+
+
   // your code
+
+  deleteMovie(movieId) {
+    model.deleteMovie(movieId)
+  },
 }
 
 function init() {
